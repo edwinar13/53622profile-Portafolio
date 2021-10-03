@@ -1,0 +1,6 @@
+efectos scroll
+https://michalsnik.github.io/aos/
+
+
+efectos bezier
+https://cubic-bezier.com/#.17,.67,.76,.06

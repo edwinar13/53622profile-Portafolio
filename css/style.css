@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*___________________________HEADER_______________________*/
+
+#header{
+    width: 80vw;
+    height: 70px;
+    background-color: rgb(67, 70, 70);
+    box-shadow: 0px 0px 6px 2px rgb(223, 223, 223);
+    padding: 0 10% 0 10%;
+    font-family: 'Bebas Neue', cursive;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+}
+#header:hover{
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0px 4px 8px 6px rgb(223, 223, 223);
+    
+}
+
+.header-brand{
+    width: 250px;
+    height: 38px;
+    padding: 16px 0px 16px 0px;
+}
+
+.header-brand h3{
+    font-size: 2.0em;
+    color: ivory;
+}
+
+.header-menu{
+    padding-top: 1.2em;
+    width: 100%;
+}
+
+.header-menu a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: ivory;
+    margin-left: 15px;
+}
+
+
+.header-contactame{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1px 15px 1px 15px;
+    border-radius: 5px;
+
+
+    text-decoration: none;
+    font-size: 1.3em;
+    color: ivory;
+    border: 1px solid ivory ;
+}
+
+
+.header-menu a:hover{
+    color: rgb(142, 70, 88);
+}
+
+.header-contactame:hover{
+    color: rgb(142, 70, 88);
+    border: 1px solid rgb(142, 70, 88);
+    cursor: pointer;
+}
+
+
+/*___________________________HOME_______________________*/
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home_container{
+    width: 900px;
+    height: 450px;
+    display: flex;
+}
+
+/*fotografia*/
+
+.img-container{
+    width: 450px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile{
+    width: 350px;
+    height: 350px;
+    clip-path: circle(45%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+
+
+/* descripcion*/
+
+.description{
+    width: 450px;
+    height: 450px;
+    display: block;
+}
+.description h1{
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+.description h2{
+    margin-top: 0px;
+    width: 500px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(67, 70, 70);
+}
+.description p{
+    text-align: justify;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+}
+
+/*Animaciones*/
+
+
+.home_container:hover img{
+    clip-path: circle(50%);
+    transition: all 1.0s;
+}
+.home_container:hover .p1{
+    padding-left: 20px;
+    transition: all 1.0s;
+}
+.home_container:hover .p2{
+    padding-left: 35px;
+    transition: all 1.0s;
+}
+.home_container:hover .p3{
+    padding-left: 50px;
+    transition: all 1.0s;
+}
+
+/*___________________________SKILLS_______________________*/
+
+#skills {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(58,63,65);
+    background: radial-gradient(circle, rgba(58,63,65,1) 0%, rgba(23,25,25,1) 100%);
+}
+
+
+#skills .card{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#skills .card img{
+    width: 150px;
+    height: 150px;
+    margin: 30px 75px;
+}
+
+#skills .card h2{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: auto;
+    
+}
+#skills .card p{
+    text-align: justify;
+    margin: 15px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+}
+
+#skills .card div{
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+    width: calc(100% + 10px);
+    border-radius: 3px 3px 3px 3px;
+    margin-left: -5px;
+    display: flex;
+}
+
+
+#skills .card .div_bg_1{
+    background-color: rgb(226, 111, 45);
+}
+#skills .card .div_bg_3{
+    background-color: rgb(255, 218, 75);
+}
+#skills .card .div_bg_2{
+    background-color: rgb(40, 94, 167);
+}
+#skills .card .div_bg_4{
+    background-color: rgb(202, 49, 50);
+}
+
+#skills .card:hover{
+    box-shadow: 5px 5px 10px 2px rgb(59, 59, 59);
+    transform: scale(1.1);
+    transition: all 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+#skills .card_1{
+    transition: all 1.0s ease-in-out;
+}
+
+#skills .card_2{
+    transition: all 1.2s ease-in-out;
+}
+
+#skills .card_3{
+    transition: all 1.2s ease-in-out;
+}
+
+#skills .card_4{
+    transition: all 1.0s ease-in-out;
+}
