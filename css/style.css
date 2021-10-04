@@ -8,11 +8,12 @@
 html{
     scroll-behavior: smooth;
 }
-
-/*___________________________HEADER_______________________*/
+/* ###########################################################################################*/
+/*__________________________________________ HEADER __________________________________________*/
+/* ###########################################################################################*/
 
 #header{
-    width: 80vw;
+    width: 80%;
     height: 70px;
     background-color: rgb(67, 70, 70);
     box-shadow: 0px 0px 6px 2px rgb(223, 223, 223);
@@ -96,11 +97,17 @@ html{
 }
 
 
-/*___________________________HOME_______________________*/
+.header-nav:hover .color-yes{
+    background-color: rgb(142, 70, 88);
+}
+
+/* ###########################################################################################*/
+/*__________________________________________  HOME  __________________________________________*/
+/* ###########################################################################################*/
 
 #home{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: calc(100vh - 70px);
     padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +152,6 @@ html{
     display: block;
 }
 .description h1{
-    margin-top: 20px;
     width: 500px;
     height: 60px;
     font-size: 60px;
@@ -189,39 +195,72 @@ html{
 
 /*___________________________SKILLS_______________________*/
 
+
 #skills {
     width: 100vw;
-    height: 100vh;
-    background-color: rgb(235, 235, 235);
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
     background: rgb(58,63,65);
     background: radial-gradient(circle, rgba(58,63,65,1) 0%, rgba(23,25,25,1) 100%);
+
 }
 
-#skills h2{
-    font-size: 50px;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#skills .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#skills .title h2{
+    font-size: 60px;
     color: ivory;
     font-family: 'Bebas Neue', cursive;
-    margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 
 #skills .card{
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    margin: 15px;
+}
+
+
+#skills .div_img{
+    width: 10%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 #skills .card img{
     width: 150px;
     height: 150px;
-    margin: 30px 75px;
+}
+
+#skills .card .div_bg{
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+    width: calc(100% + 10px);
+    border-radius: 3px 3px 3px 3px;
+    margin-left: -5px;
+    display: flex;
 }
 
 #skills .card h2{
@@ -231,22 +270,15 @@ html{
     font-size: 30px;
     margin: auto;
 }
+
 #skills .card p{
+    height: 130px;
     text-align: justify;
-    margin: 15px;
+    margin: 10px;
     font-family: 'Oxygen', sans-serif;
     font-weight: 600;
 }
 
-#skills .card div{
-    width: 100%;
-    height: 50px;
-    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
-    width: calc(100% + 10px);
-    border-radius: 3px 3px 3px 3px;
-    margin-left: -5px;
-    display: flex;
-}
 
 
 #skills .card .div_bg_1{
@@ -375,25 +407,11 @@ html{
         text-align: center;
     }
 
-
-
+}
+    @media screen and (max-width: 600px){
     /*------------------------------------- HOME -------------------------------------*/
-    #skills {
-        flex-direction: column;
-        height: auto;
-    }
-    #skills .card{
-        width: 350px;
-        height: 400px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        margin-top: 25px;
-    }
-    #skills .card img{
-        width: 150px;
-        height: 150px;
-        margin: 10px 100px;
+    #skills .title h2{
+        font-size: 50px;
     }
 
 }
